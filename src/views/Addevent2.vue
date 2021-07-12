@@ -1,13 +1,8 @@
 <template>
-    <div class="home">
-        <app-header />
-        <div class="clearfix"></div>
-        <div class="slid">
-            <Slider />
-        </div>
-        <div class="clearfix"></div>
-        <div class=" eve">
-            <Event />
+    <div class="addev2">
+        <app-header2 />
+        <div class="even">
+            <Addevent2 />
         </div>
         <Footer />
         <div class="endd">
@@ -18,25 +13,26 @@
 </template>
 <script>
 // @ is an alias to /src
-import AppHeader from "@/components/AppHeader.vue";
-import Slider from "@/components/Slider.vue";
-import Event from "@/components/Event.vue";
+import AppHeader2 from "@/components/AppHeader2.vue";
+import Addevent2 from "@/components/Addevent2.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 export default {
     name: "Home",
     components: {
-        AppHeader,
-        Slider,
-        Event,
+        AppHeader2,
+        Addevent2,
         Footer,
         End
     }
 };
 </script>
 <style scoped>
-.eve {
-    margin-top: 550px;
+.addev2 {
+    background: var(--back-color);
+}
+.even {
+    margin-top: 80px;
 }
 .endd {
     margin-top: 100px;

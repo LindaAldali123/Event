@@ -1,6 +1,6 @@
 <template>
-    <div class="Login">
-        <Login />
+    <div class="crea">
+        <Creatacount />
         <div class="clearfix"></div>
         <div class="fo">
             <Footer />
@@ -11,25 +11,25 @@
     </div>
 </template>
 <script>
-import Login from "@/components/Login.vue";
+import Creatacount from "@/components/Creatacount.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 export default {
-    name: "login",
+    name: "creatacount",
     components: {
-        Login,
         Footer,
+        Creatacount,
         End
     }
 };
 </script>
 <style scoped>
-.Login {
+.crea {
     background: var(--back-color);
 }
 @media (max-width: 969px) {
     .fo {
-        margin-top: 100px;
+        margin-top: 60px;
     }
 }
 .endd {

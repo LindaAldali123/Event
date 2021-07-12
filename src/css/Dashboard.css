@@ -1,0 +1,200 @@
+.board {
+    margin-top: 120px;
+}
+.board2 {
+    margin-top: 120px;
+}
+.board3 {
+    margin-top: 120px;
+}
+.board4 {
+    margin-top: 120px;
+}
+.dash {
+}
+/*============Side Bar ========*/
+.side{
+    margin-top: 120px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 5px solid #CCC;
+    width: 80%;
+    padding: 18px;
+    background-color: rgb(236, 236, 236);
+
+}
+.side h3{
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+.side ul{
+    list-style: none;
+}
+.side ul li{
+    padding: 20px;
+    list-style: none;
+}
+.side ul li a{
+    color:gray;
+    font-weight: bold;
+}
+/*===============End Side ========*/
+/*==============Dashboard 1==========*/
+.dash .sidebar {
+    width: 98%;
+    padding: 18px;
+    margin-right: 80px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.btton {
+    text-align: left;
+    margin-left: 5px;
+}
+.ac,
+.rj {
+    margin-top: 1px;
+    padding: 5px;
+    margin-right: 5px;
+    left: 0;
+    width: 90px;
+    height: 34px;
+}
+.ac {
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    color: var(--white-color);
+}
+.rj {
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+    color: var(--white-color);
+}
+.dash .sidebar-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0 0 0;
+    margin: 0 0 15px 0;
+    color: #32627b;
+    position: relative;
+}
+@media (max-width: 992px) {
+    .dash .sidebar-title {
+        font-size: 15px;
+    }
+}
+.dash .sidebar-item {
+    margin-bottom: 30px;
+}
+
+.dash .search-form form {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    position: relative;
+}
+.dash .search-form form input[type="text"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 40px);
+}
+
+.dash .search-form form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: -1px;
+    background: #32627b;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.dash .search-form form button:hover {
+    background: #68a4c4;
+}
+
+.dash .sidebar .recent-posts .post-item + .post-item {
+    margin-top: 15px;
+}
+
+.dash .sidebar .recent-posts img {
+    width: 70px;
+    height: 60px;
+    float: left;
+}
+
+.dash .sidebar .recent-posts h4 {
+    font-size: 15px;
+    margin-left: 95px;
+    font-weight: bold;
+}
+
+.dash .sidebar .recent-posts h4 a {
+    color: #0d2735;
+    transition: 0.3s;
+}
+
+.dash .sidebar .recent-posts h4 a:hover {
+    color: #68a4c4;
+}
+
+.dash .sidebar .recent-posts time {
+    display: block;
+    margin-left: 95px;
+    font-style: italic;
+    font-size: 14px;
+    color: #72afce;
+}
+/*====== End DashBoard 1========*/
+.dash .Events {
+    margin-top: 20px;
+}
+.dash .Evn {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.dash .Evn h4 a {
+    font-size: 18px;
+    color: black;
+}
+.dash .Evn time {
+    font-size: 12px;
+}
+.dash .col-md-8 img {
+    width: 60px;
+    height: 90px;
+    margin-left: -8px !important;
+}
+@media (max-width: 992px) {
+    .dash .col-md-8 img {
+        width: 140px;
+        height: 90px;
+    }
+}
+.dash .Evn .btto {
+    margin-top: 20px;
+}
+.dash2{
+    width: 98%;
+    padding: 18px;
+    margin-right: 80px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.dash3{
+    width: 98%;
+    padding: 18px;
+    margin-right: 80px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.dash4{
+    width: 98%;
+    padding: 18px;
+    margin-right: 80px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}

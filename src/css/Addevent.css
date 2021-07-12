@@ -1,0 +1,146 @@
+.ADD {
+    border: none;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.ADD p {
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+.ADD form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    width: 320px;
+    text-align: left !important;
+}
+@media (max-width: 800px) {
+    .ADD form input {
+        width: 270px;
+    }
+}
+@media (max-width: 456px) {
+    .ADD form input {
+        width: 210px;
+    }
+}
+@media (max-width: 375px) {
+    .ADD form input {
+        width: 160px;
+    }
+}
+@media (max-width: 766px) {
+    .add .str {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 300px) {
+    .ADD form input {
+        width: 120px;
+    }
+}
+.add .str {
+    margin-top: 90px;
+}
+.add .str h1 {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.add .str p {
+    margin-left: 9px;
+    color: rgb(63, 63, 63);
+}
+.ADD .ev {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.ADD .inpu {
+    width: 160px;
+}
+/*
+@media screen and (min-width:930px) and (max-width: 1272px) {
+    .ADD .inpu {
+        width: 200px;
+    }
+}*/
+.ADD form datalist option {
+    text-align: left !important;
+    padding: 2px !important;
+}
+.ADD .fa {
+    padding: 10px;
+    color: rgb(153, 151, 151);
+    font-size: 30px;
+}
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+.ADD form {
+    width: 80%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.add .btn button {
+    margin: auto;
+    padding: 14px;
+    width: 120px;
+    font-weight: bold;
+    background-color: rgb(223, 59, 59);
+    color: var(--white-color);
+    border: 1px solid rgb(241, 123, 123);
+}
+.add .btn button a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.add .hom button {
+    padding: 10px;
+    margin: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.add .hom button:hover {
+    background-color: rgb(184, 241, 245);
+    color: rgb(20, 108, 180);
+    border: 1px solid rgb(20, 108, 180);
+}
+/* Add Event 2*/
+.add2 {
+}
+.add2 form {
+    padding: 20px;
+}
+.add2 p {
+    font-weight: normal;
+    color: rgb(78, 77, 77);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.add2 h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.add2 .fa {
+    padding-right: 20px;
+    color: rgb(179, 177, 177);
+    font-size: 40px;
+    font-weight: normal;
+}
+.add2 button {
+    padding: 15px;
+    background-color: rgb(231, 227, 227);
+    border: 1px solid gray;
+    margin: 8px;
+}

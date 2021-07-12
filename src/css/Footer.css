@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    top: 100px;
+    background-color: #05051a;
+    color: rgb(206, 203, 203);
+    padding: 10px;
+    font-size: 12px;
+}
+.footer h1 {
+    color: var(--white-color);
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul li {
+    padding: 4px;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+}
+.end {
+    position: relative;
+    background-color: #090929;
+    color: rgb(206, 203, 203);
+    padding: 10px;
+    font-size: 12px;
+}
+.end .con ul li {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px;
+}
+.end .con ul li a {
+    color: rgb(206, 203, 203);
+}
+.copyright {
+    margin-top: 10px;
+}

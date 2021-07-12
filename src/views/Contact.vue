@@ -1,37 +1,34 @@
 <template>
-    <div class="Login">
-        <Login />
+    <div class="contac">
+        <app-header />
         <div class="clearfix"></div>
-        <div class="fo">
-            <Footer />
+        <div class="con">
+            <Contact />
         </div>
+        <Footer />
         <div class="endd">
             <End />
         </div>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     </div>
 </template>
 <script>
-import Login from "@/components/Login.vue";
+// @ is an alias to /src
+import AppHeader from "@/components/AppHeader.vue";
+import Contact from "@/components/Contact.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 export default {
-    name: "login",
+    name: "Home",
     components: {
-        Login,
+        AppHeader,
+        Contact,
         Footer,
         End
     }
 };
 </script>
 <style scoped>
-.Login {
-    background: var(--back-color);
-}
-@media (max-width: 969px) {
-    .fo {
-        margin-top: 100px;
-    }
-}
 .endd {
     margin-top: 100px;
 }

@@ -1,0 +1,32 @@
+.update form {
+    padding: 20px;
+}
+.update img {
+    width: 500px;
+}
+.update p {
+    font-weight: normal;
+    color: rgb(78, 77, 77);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.update input {
+    width: 50%;
+    height: 40px;
+}
+.update h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.update .fa {
+    padding-right: 20px;
+    color: rgb(179, 177, 177);
+    font-size: 40px;
+    font-weight: normal;
+}
+.update button {
+    padding: 15px;
+    background-color: rgb(238, 182, 182);
+    border: 1px solid gray;
+    margin: 8px;
+}

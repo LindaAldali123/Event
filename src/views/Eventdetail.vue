@@ -1,14 +1,12 @@
 <template>
-    <div class="home">
+    <div class="deta">
         <app-header />
         <div class="clearfix"></div>
         <div class="slid">
-            <Slider />
+            <Eventdetail />
         </div>
-        <div class="clearfix"></div>
-        <div class=" eve">
-            <Event />
-        </div>
+        <p class="blue">Other Events You May Like</p>
+        <Likeevent />
         <Footer />
         <div class="endd">
             <End />
@@ -19,26 +17,32 @@
 <script>
 // @ is an alias to /src
 import AppHeader from "@/components/AppHeader.vue";
-import Slider from "@/components/Slider.vue";
-import Event from "@/components/Event.vue";
+import Eventdetail from "@/components/Eventdetail.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
+import Likeevent from "@/components/Likeevent.vue";
 export default {
-    name: "Home",
+    name: "eventdetail",
     components: {
         AppHeader,
-        Slider,
-        Event,
+        Eventdetail,
+        Likeevent,
         Footer,
         End
     }
 };
 </script>
 <style scoped>
-.eve {
-    margin-top: 550px;
+.deta {
+    background-color: var(--back-color);
 }
 .endd {
     margin-top: 100px;
+}
+.deta p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 26px;
 }
 </style>
