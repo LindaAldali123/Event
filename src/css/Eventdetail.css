@@ -8,12 +8,12 @@
     box-shadow: 0 15px 30px 0 rgba(37, 37, 37, 0.2);
 }
 @media (max-width: 1200px) {
-    .detail img {
+    .detail .img img {
         width: 500px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
-    .detail img {
+    .detail .img img {
         width: 420px !important;
     }
     .detail form {
@@ -27,14 +27,54 @@
         margin-left: 0 !important;
         margin-right: 20px !important;
     }
-    .detail img {
+    .detail .img img {
         width: 480px;
         left: 0;
         right: 0;
     }
 }
-.detail .container img {
+.detail .container .img img {
     margin-top: 36px;
+}
+.detail .container .back {
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(transparent, #01081677) !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+.detail .container .back img {
+    filter: drop-shadow(30px, 10px);
+}
+@media (max-width: 1204px) {
+    .detail .container .back {
+        width: 102%;
+    }
+}
+@media (max-width: 515px) {
+    .detail .container .back {
+        width: 500px;
+        background-image: none !important;
+    }
+    .detail .container .back img {
+        display: none;
+    }
+    .detail .img img {
+        margin-left: -10px;
+    }
+    .detail .container .row {
+        margin-top: -488px !important;
+    }
+    .detail .container .col-md-5 {
+        margin-left: -10px !important;
+    }
+}
+.detail .container .row {
+    margin-top: -438px;
 }
 .detail .container .col-md-5 {
     margin-top: 40px;
@@ -58,6 +98,7 @@
     margin: 10px;
     width: 380px;
     padding: 20px;
+    background-color: var(--white-color);
     -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid rgb(219, 218, 218);
@@ -97,4 +138,11 @@
 }
 .detail iframe {
     padding: 20px;
+}
+.detail .org {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: -25px;
 }

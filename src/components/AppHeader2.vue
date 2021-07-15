@@ -2,9 +2,7 @@
     <div class="row header2">
         <!--====Start Navigation=====-->
         <div class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand navbar-left pl-5 white" :href="hom"
-                >Events</a
-            >
+            <a class="navbar-brand navbar-left pl-5 red" :href="hom">Events</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -51,7 +49,7 @@
                     </li>
                     <li>
                         <label class="hello" style="margin-top:8px"
-                            ><spane id="username"> </spane> Hello</label
+                            ><span id="username"> </span> Hello</label
                         >
                     </li>
                     <li class="but">

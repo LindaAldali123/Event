@@ -1,7 +1,7 @@
 <template>
     <div class="row header">
         <!--====Start Navigation=====-->
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand pl-5 red" :href="hom">Events</a>
             <button
                 class="navbar-toggler"
@@ -83,7 +83,7 @@
                     </li>
                     <li class="nav-item px-3">
                         <router-link to="/addevent">
-                            <a class="nav-link blue">Create an event</a>
+                            <a class="nav-link colo">Create an event</a>
                         </router-link>
                     </li>
                     <li class="nav-item px-3">

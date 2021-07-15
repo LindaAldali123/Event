@@ -24,15 +24,6 @@
                                     </div>
                                     <div class="form-group first">
                                         <input
-                                            type="email"
-                                            class="form-control"
-                                            placeholder="Confirm Email"
-                                            id="username"
-                                            v-model="ema"
-                                        />
-                                    </div>
-                                    <div class="form-group first">
-                                        <input
                                             type="text"
                                             class="form-control"
                                             placeholder="FirstName"
@@ -56,6 +47,15 @@
                                             placeholder="Enter Password"
                                             id="password"
                                             v-model="pass"
+                                        />
+                                    </div>
+                                    <div class="form-group first">
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            placeholder="Confirm Password"
+                                            id="password"
+                                            v-model="ema"
                                         />
                                     </div>
                                     <input

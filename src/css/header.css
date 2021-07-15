@@ -2,8 +2,14 @@
 .blue {
     color: rgb(34, 10, 175) !important;
 }
+.colo {
+    color: rgb(129, 210, 235) !important;
+}
 .red {
     color: #e26d5c !important;
+}
+.colo:hover {
+    color: silver !important;
 }
 /* End Variables */
 .header {
@@ -28,7 +34,7 @@
 }
 .header .navbar .collapse li:hover {
     list-style: none !important;
-    background-color: rgb(238, 237, 237) !important;
+    background-color: rgb(155, 153, 153) !important;
 }
 .header .navbar .collapse li a {
     text-decoration: none !important;
@@ -74,4 +80,16 @@
     transform-style: preserve-3d;
     background-color: var(--main-color);
     width: 300px;
+}
+.carousel-indicators {
+    z-index: -1;
+}
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+    .navbar-right li {
+        margin-left: -9px !important;
+    }
+    .navbar-right {
+        margin-left: -60px !important;
+        font-size: 11px;
+    }
 }

@@ -30,6 +30,7 @@ import "./css/Payment.css";
 import "./css/Contact.css";
 import "./css/Dashboard.css";
 import "./css/Updatev.css";
+import "./css/Organizers.css";
 import "vue-owl-carousel";
 import "vue-owl-carousel2";
 import "vue-owl-carousel2/dist/vue-owl-carousel2";

@@ -59,7 +59,7 @@
             <div class="mix item online food " data-aos="fade-up">
                 <a :href="link3" class="link">
                     <div class="card-sl">
-                        <div class="card-state state1">On</div>
+                        <div class="card-state state2">Off</div>
                         <div class="card-price">100$</div>
                         <div class="card-reg">
                             <i class="fa fa-user-o"></i>123<span class="red">
@@ -124,7 +124,7 @@
             <div class="mix item music jul " data-aos="zoom-out">
                 <a :href="link3" class="link">
                     <div class="card-sl">
-                        <div class="card-state state2">Off</div>
+                        <div class="card-state state1">On</div>
                         <div class="card-price">100$</div>
                         <div class="card-reg">
                             <i class="fa fa-user-o"></i>123<span class="red">
@@ -231,7 +231,7 @@ require(["aos"], function(AOS) {
 });
 import carousel from "vue-owl-carousel";
 export default {
-    name: "Likeevent",
+    name: "Organizerevent",
     components: { carousel },
     data() {
         return {

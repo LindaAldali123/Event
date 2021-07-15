@@ -9,6 +9,7 @@
         <div class=" eve">
             <Event />
         </div>
+        <Organizers />
         <Footer />
         <div class="endd">
             <End />
@@ -21,6 +22,7 @@
 import AppHeader from "@/components/AppHeader.vue";
 import Slider from "@/components/Slider.vue";
 import Event from "@/components/Event.vue";
+import Organizers from "@/components/Organizers.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 export default {
@@ -29,6 +31,7 @@ export default {
         AppHeader,
         Slider,
         Event,
+        Organizers,
         Footer,
         End
     }

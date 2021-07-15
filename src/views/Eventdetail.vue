@@ -7,6 +7,8 @@
         </div>
         <p class="blue">Other Events You May Like</p>
         <Likeevent />
+        <!--<p class="blue">More Events From This Organizer</p>
+        <Organizerevent />-->
         <Footer />
         <div class="endd">
             <End />
@@ -18,6 +20,7 @@
 // @ is an alias to /src
 import AppHeader from "@/components/AppHeader.vue";
 import Eventdetail from "@/components/Eventdetail.vue";
+//import Organizerevent from "@/components/Organizerevent.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 import Likeevent from "@/components/Likeevent.vue";
@@ -27,6 +30,7 @@ export default {
         AppHeader,
         Eventdetail,
         Likeevent,
+        // Organizerevent,
         Footer,
         End
     }

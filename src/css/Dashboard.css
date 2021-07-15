@@ -13,31 +13,41 @@
 .dash {
 }
 /*============Side Bar ========*/
-.side{
+.side {
     margin-top: 120px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 5px solid #CCC;
+    border: 5px solid #ccc;
     width: 80%;
     padding: 18px;
     background-color: rgb(236, 236, 236);
-
+    overflow: scroll;
 }
-.side h3{
+@media (max-width: 992px) {
+    .side {
+        width: 95% !important;
+    }
+}
+@media (max-width: 574px) {
+    .side {
+        width: 100% !important;
+    }
+}
+.side h3 {
     margin-top: 30px;
     text-align: center;
     justify-content: center;
     font-weight: bold;
     font-size: 36px;
 }
-.side ul{
+.side ul {
     list-style: none;
 }
-.side ul li{
+.side ul li {
     padding: 20px;
     list-style: none;
 }
-.side ul li a{
-    color:gray;
+.side ul li a {
+    color: gray;
     font-weight: bold;
 }
 /*===============End Side ========*/
@@ -87,12 +97,36 @@
 .dash .sidebar-item {
     margin-bottom: 30px;
 }
-
+@media (max-width: 1200px) {
+    .board,
+    .board2,
+    .board3,
+    .board4 {
+        width: 100% !important;
+    }
+}
 .dash .search-form form {
     background: #fff;
     border: 1px solid #ddd;
     padding: 3px 10px;
     position: relative;
+}
+@media (max-width: 574px) {
+    .board2 .dash2,
+    .board3 .dash3,
+    .board4 .dash4 {
+        width: 100% !important;
+        margin-right: 10px;
+    }
+    .dash .das {
+        width: 100% !important;
+    }
+}
+@media screen and(min-width:768) and(max-width:1200px) {
+    .ac,
+    .rj {
+        margin-bottom: 2px !important;
+    }
 }
 .dash .search-form form input[type="text"] {
     border: 0;
@@ -180,19 +214,19 @@
 .dash .Evn .btto {
     margin-top: 20px;
 }
-.dash2{
+.dash2 {
     width: 98%;
     padding: 18px;
     margin-right: 80px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.dash3{
+.dash3 {
     width: 98%;
     padding: 18px;
     margin-right: 80px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.dash4{
+.dash4 {
     width: 98%;
     padding: 18px;
     margin-right: 80px;

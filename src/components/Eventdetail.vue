@@ -1,13 +1,15 @@
 <template>
     <div class="detail">
         <div class="container">
+            <div class="back">
+                <img src="../assets/s1.jpg" width="100%" height="500" />
+            </div>
             <div class="row">
                 <div class="col-md-7">
-                    <img
-                        src="../assets/s1.jpg"
-                        width="600"
-                        height="400"
-                    /><br />
+                    <div class="img">
+                        <img src="../assets/s1.jpg" width="600" height="400" />
+                    </div>
+                    <br />
                     <i class="fa fa-upload para"></i>
                     <i class="fa fa-heart-o para"></i>
                     <hr />
@@ -77,6 +79,8 @@
                     </form>
                 </div>
             </div>
+            <p class="blue org">More Events From This Organizer</p>
+            <Organizerevent />
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26169.600604472475!2d36.74669283451427!3d34.92651883019593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1523711a3d8c9ff1%3A0xa67db3608787b804!2z2KfZhNix2LPYqtmG2Iwg2LPZiNix2YrYpw!5e0!3m2!1sar!2sca!4v1620771846851!5m2!1sar!2sca"
                 frameborder="0"
@@ -92,8 +96,10 @@ require(["aos"], function(AOS) {
         easing: "ease-in-out-sine"
     });
 });
+import Organizerevent from "@/components/Organizerevent.vue";
 export default {
     name: "Eventdetail",
+    components: { Organizerevent },
     data() {
         return {
             link: "/signup",

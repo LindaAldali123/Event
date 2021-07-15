@@ -25,198 +25,273 @@
         </ul>
         <div class="row">
             <div class="mix foryou food col-md-3" data-aos="zoom-out">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state1">On</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div>
+                        <!--<a :href="link3" class="card-button"> Purchase</a>-->
+                    </div></a
+                >
             </div>
             <div class="mix online food col-md-3" data-aos="fade-up">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state2">Off</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div></div
+                ></a>
             </div>
             <div class="mix music food col-md-3" data-aos="fade-up">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state2">Off</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div></div
+                ></a>
             </div>
             <div class="mix music jul col-md-3" data-aos="zoom-out">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state1">On</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div></div
+                ></a>
             </div>
         </div>
         <div class="row">
             <div class="mix online music jul col-md-3" data-aos="zoom-out">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state2">Off</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div></div
+                ></a>
             </div>
             <div class="mix music jul col-md-3" data-aos="fade-up">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state1">On</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
-                    </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div></div
+                ></a>
             </div>
             <div class="mix free music col-md-3" data-aos="fade-up">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state1">On</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div>
                     </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                </a>
             </div>
             <div class="mix free col-md-3" data-aos="zoom-out">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="../assets/s1.jpg" />
-                    </div>
+                <a :href="link3" class="link">
+                    <div class="card-sl">
+                        <div class="card-state state1">On</div>
+                        <div class="card-price">100$</div>
+                        <div class="card-reg">
+                            <i class="fa fa-user-o"></i>123<span class="red">
+                                REG</span
+                            >
+                        </div>
+                        <div class="card-image">
+                            <img src="../assets/s1.jpg" />
+                        </div>
 
-                    <a class="card-action" href="#"
-                        ><i class="fa fa-heart"></i
-                    ></a>
-                    <div class="card-heading">
-                        Audi Q8
+                        <a class="card-action" href="#"
+                            ><i class="fa fa-heart"></i
+                        ></a>
+                        <div class="card-heading">
+                            Audi Q8
+                        </div>
+                        <div class="card-date">
+                            Sun,jul 25,12:00PM
+                        </div>
+                        <div class="card-text">
+                            crossover SUV coup made by Audi.
+                        </div>
+
+                        <div class="card-foteer">
+                            <i class="fa fa-user-o"></i> 2.8k creator
+                            followers<i class="fa fa-upload"></i>
+                        </div>
+                        <!-- <a :href="link3" class="link"><i class="fa fa-link"></i></a>-->
                     </div>
-                    <div class="card-date">
-                        Sun,jul 25,12:00PM
-                    </div>
-                    <div class="card-text">
-                        crossover SUV coup made by Audi.
-                    </div>
-                    <div class="card-foteer">
-                        <i class="fa fa-user-o"></i> 2.8k creator followers
-                    </div>
-                    <a :href="link3" class="card-button"> Purchase</a>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -240,10 +315,10 @@ export default {
     mounted() {
         var containerEl = document.querySelector(".container");
         mixitup(containerEl);
-        var co = document.querySelector(".shuffle li");
-        co.addClass("selected")
-            .siblings()
-            .removeClass("selected");
+        //var co = document.querySelector(".shuffle li");
+        //co.addClass("selected")
+        //.siblings()
+        //.removeClass("selected");
     }
 };
 </script>
