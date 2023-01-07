@@ -1,6 +1,6 @@
 <template>
     <!--Start Slider -->
-    <div class="row">
+    <div class="row slider">
         <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -42,27 +42,27 @@
                 <div class="carousel-item">
                     <img
                         class="d-block w-100"
-                        src="../assets/s1.jpg"
+                        src="../assets/s2.jpg"
                         alt="Second slide"
-                        width="1100"
+                        width="1200"
                         height="500"
                     />
                 </div>
                 <div class="carousel-item">
                     <img
                         class="d-block w-100"
-                        src="../assets/s1.jpg"
+                        src="../assets/s3.jpg"
                         alt="Third slide"
-                        width="1100"
+                        width="1200"
                         height="500"
                     />
                 </div>
                 <div class="carousel-item">
                     <img
                         class="d-block w-100"
-                        src="../assets/s1.jpg"
+                        src="../assets/s4.jpg"
                         alt="Third slide"
-                        width="1100"
+                        width="1200"
                         height="500"
                     />
                 </div>

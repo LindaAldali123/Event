@@ -1,121 +1,24 @@
 <template>
-    <div class="add">
-        <div class="row">
-            <div class="col-md-3 str">
+    <div class="add row">
+        <div class="container">
+            <div class="col-md-12 str">
                 <h1>Let's Build Your Event</h1>
-                <p>
-                    Tell Us About Some Details To Build Your Event.
-                </p>
             </div>
-            <div class="col-md-9">
-                <form class="ADD">
-                    <form class="Que1" data-aos="fade-up">
-                        <p>
-                            <i class="fa fa-signing"></i>
-                            What's Your Level of experience hosting events?
-                        </p>
-                        <input
-                            placeholder="Select your experinece"
-                            list="Que1"
-                            v-model="Que1"
-                        />
-                        <datalist id="Que1">
-                            <option value="Newbie - This is my first event">
-                            </option>
-                            <option
-                                value="Beginner - Not my first time, but I need experience"
-                            >
-                            </option>
-                            <option
-                                value="Intermidate - I have some past experience hosting event"
-                            >
-                            </option>
-                            <option
-                                value="Expert Ihave plenty of experience hosting event"
-                            >
-                            </option>
-                        </datalist>
-                    </form>
-
-                    <form class="Que2" data-aos="fade-up">
-                        <p>
-                            <i class="fa fa-volume-up"></i>
-                            How did you first hear about events?
-                        </p>
-                        <input
-                            placeholder="Select an option"
-                            list="Que2"
-                            v-model="Que2"
-                        />
-                        <datalist id="Que2">
-                            <option value="Friend or Colleage"> </option>
-                            <option value="Social Media post"> </option>
-                            <option value="Online Search"> </option>
-                            <option value="Online ad"> </option>
-                            <option value="3rd party blog or forum"> </option>
-                            <option value="The event blog"> </option>
-                            <option
-                                value="Lattended an event ticketed by event"
-                            >
-                            </option>
-                            <option value="Other"> </option>
-                        </datalist>
-                    </form>
-
-                    <form class="Que3" data-aos="fade-up">
-                        <p>
-                            <i class="fa fa-group"></i>
-                            How many people help plan your events online?
-                        </p>
-                        <input
-                            placeholder="Select quantity"
-                            list="Que3"
-                            v-model="Que3"
-                        />
-                        <datalist id="Que3">
-                            <option value="Just me"> </option>
-                            <option value="1-5 people"> </option>
-                            <option value="6-10 people"> </option>
-                            <option value="11-20 people"> </option>
-                            <option value="More Than 20"> </option>
-                            <option
-                                value="Lattended an event ticketed by event"
-                            >
-                            </option>
-                            <option value="Other"> </option>
-                        </datalist>
-                    </form>
-
-                    <form class="Que4" data-aos="fade-up">
-                        <p>
-                            <i class="fa fa-calendar-check-o"></i>
-                            How often do you plan to host events?
-                        </p>
-                        <input
-                            placeholder="Select"
-                            list="Que4"
-                            v-model="Que4"
-                        />
-                        <datalist id="Que4">
-                            <option value="Just Once"> </option>
-                            <option value="Weekly"> </option>
-                            <option value="Monthly"> </option>
-                            <option value="Afew times ayear "> </option>
-                            <option value="Once A year"> </option>
-                        </datalist>
-                    </form>
-
-                    <form class="Que5" data-aos="fade-up">
+            <div class="col-md-12">
+                <form class="ADD" @submit.prevent="createvent" action="#">
+                    <div class="Que1 form-group" data-aos="fade-up">
                         <p>
                             <i class="fa fa-blind"></i>
                             What type of event are you hosting today?
                         </p>
                         <input
                             placeholder="Select Type"
-                            list="Que5"
-                            v-model="Que5"
+                            list="Que1"
+                            class="form-control"
+                            v-model="etype"
+                            required
                         />
-                        <datalist id="Que5">
+                        <datalist id="Que1">
                             <option value="Conference"> </option>
                             <option value="Seminar Or Talk"> </option>
                             <option value="Tradeshow,Consumer Show,or Expo">
@@ -138,93 +41,225 @@
                             <option value="Appearnce or Signing"> </option>
                             <option value="Other"> </option>
                         </datalist>
-                    </form>
+                    </div>
 
-                    <form class="Que6" data-aos="fade-up">
+                    <div class="Que2 form-group" data-aos="fade-up">
                         <p>
                             <i class="fa fa-vcard-o"></i>
                             Name of your event
                         </p>
                         <label class="bold">Part </label>
-                        <input type="text" v-model="Que6" />
-                    </form>
-                    <form class="Que7" data-aos="fade-up">
+                        <input
+                            type="text"
+                            class="form-control"
+                            v-model="tit"
+                            required
+                        />
+                        <!-- <p v-if="`${tit}` === null">pleas full</p> -->
+                    </div>
+                    <div class="Que3 form-group">
+                        <h1><i class="fa fa-font"></i>SubTitle</h1>
+                        <textarea
+                            @input="countchars"
+                            v-model="sub"
+                            class="form-control"
+                            :maxlength="maxLength"
+                            cols="70"
+                            rows="4"
+                            placeholder="Write A short event summary ."
+                            required
+                        >
+                        </textarea>
+                        <br />
+                        <span class="counter" :class="{ zero: reachzero }">
+                            0 | <span>{{ remainingchars }}</span>
+                        </span>
+                    </div>
+                    <div class="Que4 form-group">
+                        <h1><i class="fa fa-text-width"></i>Description</h1>
+                        <p>
+                            Add More details to your event .
+                        </p>
+
+                        <br />
+                        <textarea
+                            cols="70"
+                            rows="8"
+                            class="form-control"
+                            v-model="bod"
+                            required
+                        >
+                        </textarea>
+                    </div>
+                    <div class="Que5 form-group">
+                        <h1>
+                            <i class="fa fa-file-picture-o"></i>Select Event
+                            Image
+                        </h1>
+                        <input
+                            type="file"
+                            ref="files"
+                            multiple
+                            class="form-control"
+                            id="files"
+                            @change="handleImage"
+                            name="img"
+                            accept="image"
+                            required
+                        />
+                    </div>
+
+                    <div class="Que6 form-group" data-aos="fade-up">
                         <p>
                             <i class="fa fa-calendar"></i>
                             Date and Time
                         </p>
-                        <form class="ev">
+                        <div class="ev form-group">
                             <label for="birthday">Start Event:</label>
                             <input
-                                class="inpu"
+                                class="inpu form-control"
                                 type="date"
                                 id="birthday"
                                 name="birthday"
-                                v-model="Que7"
+                                v-model="start1"
+                                required
                             />
                             <label for="birthday">End Event:</label>
                             <input
-                                class="inpu"
+                                class="inpu  form-control"
                                 type="date"
                                 id="birthday"
                                 name="birthday"
-                                v-model="Que8"
+                                v-model="end1"
+                                required
                             />
-                        </form>
-                        <form class="ev">
+                        </div>
+                        <div class="ev form-group">
                             <label for="birthday">Start Time:</label>
                             <input
-                                class="inpu"
+                                class="inpu form-control"
                                 type="time"
                                 id="birthday"
                                 name="birthday"
-                                v-model="Que9"
+                                v-model="start2"
+                                required
                             />
                             <label for="birthday">End Time:</label>
                             <input
-                                class="inpu"
+                                class="inpu form-control"
                                 type="time"
                                 id="birthday"
                                 name="birthday"
-                                v-model="Que10"
+                                v-model="end2"
+                                required
                             />
-                        </form>
-                    </form>
-                    <form class="hom" data-aos="fade-up">
+                        </div>
+                    </div>
+                    <div class="hom Que7 form-group" data-aos="fade-up">
                         <p>
                             <i class="fa fa-home"></i>
-                            Location of your event
+                            Address of your event
                         </p>
-                        <button>Venue</button>
-                        <button>Online event</button>
-                        <button>To be announced</button><br />
-                        <label for="birthday">Venue Location:</label><br />
+
                         <input
-                            class="in"
-                            type="search"
-                            name="search"
-                            placeholder="Search events"
-                            aria-label="Search"
+                            class="in form-control"
+                            type="text"
+                            name="text"
+                            placeholder="Address events"
+                            aria-label="Address"
+                            v-model="address"
+                            required
                         />
-                    </form>
-                    <form class="btn">
-                        <button
+                    </div>
+
+                    <div class="hom Que8 form-group" data-aos="fade-up">
+                        <p>
+                            <i class="fa fa-hand-o-up"></i>
+                            Price of your event
+                        </p>
+
+                        <input
+                            class="in form-control"
+                            type="number"
+                            name="number"
+                            placeholder="price events"
+                            aria-label="price"
+                            v-model="price"
+                            required
+                        />
+                    </div>
+                    <div class="hom Que8 form-group" data-aos="fade-up">
+                        <p>
+                            <i class="fa fa-child"></i>
+                            People Number of your event
+                        </p>
+
+                        <input
+                            class="in form-control"
+                            type="number"
+                            name="number"
+                            placeholder="People events"
+                            aria-label="People"
+                            v-model="people"
+                            required
+                        />
+                    </div>
+                    <div class="hom Que9 form-group" data-aos="fade-up">
+                        <p>
+                            <i class="fa fa-text-height"></i>
+                            Meta Description
+                        </p>
+
+                        <input
+                            class="in form-control"
+                            type="text"
+                            name="text"
+                            placeholder="des events"
+                            aria-label="des"
+                            v-model="meta"
+                            required
+                        />
+                    </div>
+                    <div class="hom Que10 form-group" data-aos="fade-up">
+                        <p>
+                            <i class="fa fa-compass"></i>
+                            Tags:
+                        </p>
+
+                        <input
+                            class="in form-control"
+                            type="text"
+                            name="text"
+                            placeholder="tag events"
+                            aria-label="tag"
+                            v-model="tag"
+                            required
+                        />
+                    </div>
+
+                    <div class="btn form-group">
+                        <input
+                            class="button btn btn-primary"
+                            type="submit"
                             :disabled="
-                                !Que1 &&
-                                    !Que2 &&
-                                    !Que3 &&
-                                    !Que4 &&
+                                !etype &&
+                                    !tit &&
+                                    !sub &&
+                                    !bod &&
                                     !Que5 &&
-                                    !Que6 &&
-                                    !Que7 &&
-                                    !Que8 &&
-                                    !Que9 &&
-                                    !Que10
+                                    !start1 &&
+                                    !end1 &&
+                                    !start2 &&
+                                    !end2 &&
+                                    !address &&
+                                    !price &&
+                                    !people &&
+                                    !meta &&
+                                    !tag
                             "
-                        >
-                            <a :href="link2">NEXT</a>
-                        </button>
-                    </form>
+                            value="ADD EVENT"
+                        />
+                    </div>
                 </form>
             </div>
         </div>
@@ -236,22 +271,92 @@ require(["aos"], function(AOS) {
         easing: "ease-in-out-sine"
     });
 });
+import { createvent } from "../graphql/Queries";
+import VueCookies from "vue-cookies";
 export default {
     name: "addevent",
     data() {
         return {
-            link2: "/Addevent2",
-            Que1: "",
-            Que2: "",
-            Que3: "",
-            Que4: "",
+            // link2: "/Addevent2",
+            etype: "",
+            tit: "",
+            sub: "",
+            bod: "",
             Que5: "",
-            Que6: "",
-            Que7: "",
+            start: "",
+            start1: "",
+            start2: "",
+            end: "",
+            end1: "",
+            end2: "",
             Que8: "",
             Que9: "",
-            Que10: ""
+            address: "",
+            price: 0,
+            people: 0,
+            meta: "",
+            tag: "",
+            emp: "",
+            files: "",
+            username: VueCookies.get("session").username,
+            maxLength: 30,
+            remainingchars: 30,
+            //message: null,
+            reachzero: false,
+            imagesrc: ""
+            // image: VueCookies.get("imag")
         };
+    },
+    methods: {
+        handleImage(e) {
+            const selectedImage = e.target.files[0];
+            this.createBase64Image(selectedImage);
+        },
+        createBase64Image(fileobj) {
+            const reader = new FileReader();
+            reader.onload = e => {
+                this.imagesrc = e.target.result;
+            };
+            reader.readAsDataURL(fileobj);
+        },
+        countchars: function() {
+            this.remainingchars = this.maxLength - this.sub.length;
+            this.reachzero = this.remainingchars === 0;
+            console.log(this.reachzero);
+        },
+        async createvent() {
+            const { imagesrc } = this;
+            try {
+                var result8 = await createvent(
+                    this.username,
+                    this.tit,
+                    this.sub,
+                    this.bod,
+                    this.meta,
+                    this.price,
+                    this.tag,
+                    (this.start = `${this.start1}+${this.start2}`),
+                    (this.end = `${this.end1}+${this.end2}`),
+                    this.people,
+                    this.etype,
+                    this.address,
+                    imagesrc
+                );
+                console.log(result8);
+                console.log("ADD Event Success");
+                alert("The Event Successfully Added");
+                console.log(result8.data.createEvent.event);
+                window.location.reload(3000);
+                this.emp = result8.data.createEvent.event;
+                if (this.emp == null) {
+                    // alert("Empty");
+                }
+                // this.people = result;
+                console.log("-----------------------------------------");
+            } catch (error) {
+                console.error(error);
+            }
+        }
     }
 };
 </script>

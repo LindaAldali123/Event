@@ -12,15 +12,17 @@
                                         Login to <strong>Event</strong>
                                     </h3>
                                 </div>
-                                <form action="#" method="post">
+                                <form>
                                     <div class="form-group first">
+                                        <div class="red">{{ errorlog }}</div>
                                         <label for="username">Username</label>
                                         <input
                                             type="text"
                                             class="form-control"
-                                            placeholder="your-email@gmail.com"
+                                            placeholder="Enter The Username"
                                             id="username"
-                                            v-model="user"
+                                            v-model="username"
+                                            required
                                         />
                                     </div>
                                     <div class="form-group last mb-3">
@@ -30,7 +32,8 @@
                                             class="form-control"
                                             placeholder="Your Password"
                                             id="password"
-                                            v-model="pas"
+                                            v-model="password"
+                                            required
                                         />
                                     </div>
                                     <div
@@ -56,7 +59,8 @@
                                         type="submit"
                                         value="Log In"
                                         class="btn btn-block py-2 btn-primary"
-                                        :disabled="!user && !pas"
+                                        @click.prevent="login"
+                                        :disabled="!username && !password"
                                     />
                                     <span class="text-center my-3 d-block"
                                         >or</span
@@ -102,14 +106,43 @@ require(["aos"], function(AOS) {
         easing: "ease-in-out-sine"
     });
 });
+import VueCookies from "vue-cookies";
+import { login } from "../graphql/Queries";
 export default {
     name: "Login",
     data() {
         return {
             link: "/signup",
-            user: "",
-            pas: ""
+            username: "",
+            password: "",
+            errorlog: "",
+            token: ""
         };
+    },
+    methods: {
+        async login() {
+            try {
+                var result2 = await login(this.username, this.password);
+                console.log(result2);
+                if (result2.data.tokenAuth == null) {
+                    this.errorlog = "Have Error Username Or password Try Again";
+                    console.log(this.errorlog);
+                } else {
+                    console.log("Success Login");
+                    //VueCookies.set("token", result2.data.tokenAuth.token);
+                    //console.log(result2.data.tokenAuth.token);
+                    VueCookies.set("session", {
+                        username: this.username,
+                        token: result2.data.tokenAuth.token
+                    });
+                    this.$router.push("/#");
+                }
+                // this.people = result;
+                console.log("-----------------------------------------");
+            } catch (error) {
+                console.error(error);
+            }
+        }
     }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
-    <div class="addev">
-        <app-header2 />
+    <div class="addev" v-if="token">
+        <app-header />
         <div class="even">
             <Addevent />
         </div>
@@ -13,17 +13,23 @@
 </template>
 <script>
 // @ is an alias to /src
-import AppHeader2 from "@/components/AppHeader2.vue";
+import AppHeader from "@/components/AppHeader.vue";
 import Addevent from "@/components/Addevent.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
+import VueCookies from "vue-cookies";
 export default {
     name: "Home",
     components: {
-        AppHeader2,
+        AppHeader,
         Addevent,
         Footer,
         End
+    },
+    data() {
+        return {
+            token: VueCookies.get("session").token
+        };
     }
 };
 </script>

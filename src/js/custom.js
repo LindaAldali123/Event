@@ -1,14 +1,15 @@
-/* Global $, alert, console */
-$(function() {
-    "use strict";
-
-    //Trigger Mixitup
-    $("#container").mixItUp();
-    //Adujst Shuffle Links
-    $(".shuffle li").click(function() {
-        $(this)
-            .addClass("selected")
-            .siblings()
-            .removeClass("selected");
-    });
-});
+import VueCookies from "vue-cookies";
+export default {
+    data() {
+        return {
+            token: VueCookies.get("session").token,
+            username: VueCookies.get("session").username
+            //logout: VueCookies.delete("session"),
+        };
+    },
+    methods: {
+        show() {
+            return this.token;
+        }
+    }
+};

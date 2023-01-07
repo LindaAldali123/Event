@@ -154,7 +154,7 @@ h2 {
     background: #ccc;
 }
 
-.control input:checked ~ .control__indicator {
+.control input:checked ~ .control__indicator{
     background: #fb771a;
 }
 

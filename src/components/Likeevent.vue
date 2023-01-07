@@ -6,7 +6,7 @@
             :dots="true"
             :loop="true"
             :margin="25"
-            :nav="true"
+            :nav="false"
             :autoplaySpeed="true"
             :autoplayTimeout="5000"
             :autowidth="true"
@@ -23,7 +23,7 @@
                 }
             }"
             ><!--class="owl-carousel owl-theme"-->
-            <div class="mix item foryou food " data-aos="zoom-out">
+            <div class="mix item foryou food col-lg-12" data-aos="zoom-out">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state1">On</div>
@@ -34,7 +34,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"
@@ -56,7 +60,7 @@
                     </div>
                 </a>
             </div>
-            <div class="mix item online food " data-aos="fade-up">
+            <div class="mix item online food col-lg-12" data-aos="fade-up">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state1">On</div>
@@ -67,7 +71,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"
@@ -88,7 +96,7 @@
                         </div></div
                 ></a>
             </div>
-            <div class="mix item music food " data-aos="fade-up">
+            <div class="mix item music food col-lg-12" data-aos="fade-up">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state1">On</div>
@@ -99,7 +107,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"
@@ -121,7 +133,7 @@
                     </div>
                 </a>
             </div>
-            <div class="mix item music jul " data-aos="zoom-out">
+            <div class="mix item music jul col-lg-12" data-aos="zoom-out">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state2">Off</div>
@@ -132,7 +144,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"
@@ -154,7 +170,7 @@
                     </div>
                 </a>
             </div>
-            <div class="mix item music jul " data-aos="zoom-out">
+            <div class="mix item music jul col-lg-12" data-aos="zoom-out">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state2">Off</div>
@@ -165,7 +181,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"
@@ -187,7 +207,7 @@
                     </div>
                 </a>
             </div>
-            <div class="mix item music jul " data-aos="zoom-out">
+            <div class="mix item music jul col-lg-12" data-aos="zoom-out">
                 <a :href="link3" class="link">
                     <div class="card-sl">
                         <div class="card-state state1">On</div>
@@ -198,7 +218,11 @@
                             >
                         </div>
                         <div class="card-image">
-                            <img src="../assets/s1.jpg" />
+                            <img
+                                src="../assets/s1.jpg"
+                                height="150"
+                                width="100%"
+                            />
                         </div>
 
                         <a class="card-action" href="#"

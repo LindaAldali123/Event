@@ -12,24 +12,26 @@
                                         <strong>Event</strong>
                                     </h3>
                                 </div>
-                                <form :action="lin">
+                                <form>
                                     <div class="form-group first">
-                                        <label for="username">Username</label>
+                                        <label for="username"
+                                            >Enter Email</label
+                                        >
                                         <input
-                                            type="text"
+                                            type="email"
                                             class="form-control"
-                                            placeholder="your-email@gmail.com"
-                                            id="username"
-                                            v-model="name"
+                                            placeholder="Enter Your Email Please"
+                                            id="email"
+                                            v-model="email"
                                         />
                                     </div>
                                     <input
                                         type="submit"
-                                        :href="lin"
-                                        :disabled="!name"
+                                        @click.prevent="created()"
+                                        :disabled="!email"
                                         value="Continue"
                                         class="btn btn-block py-2 btn-primary"
-                                    />
+                                    /><!--:href="lin"-->
                                     <span class="text-center my-3 d-block"
                                         >or</span
                                     >
@@ -67,13 +69,20 @@ require(["aos"], function(AOS) {
         easing: "ease-in-out-sine"
     });
 });
+import VueCookies from "vue-cookies";
 export default {
     name: "signup",
     data() {
         return {
-            lin: "/creatacount",
-            name: ""
+            email: ""
         };
+    },
+    methods: {
+        created() {
+            VueCookies.set("email", this.email, "3000");
+            this.$router.push({ path: "creatacount" });
+            console.log(this.email);
+        }
     }
 };
 </script>

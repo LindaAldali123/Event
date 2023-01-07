@@ -1,6 +1,6 @@
 <template>
     <div class="updat">
-        <app-header2 />
+        <app-header />
         <div class="even">
             <Updatevent />
         </div>
@@ -13,14 +13,14 @@
 </template>
 <script>
 // @ is an alias to /src
-import AppHeader2 from "@/components/AppHeader2.vue";
+import AppHeader from "@/components/AppHeader.vue";
 import Updatevent from "@/components/Updatevent.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
 export default {
     name: "updatevent",
     components: {
-        AppHeader2,
+        AppHeader,
         Updatevent,
         Footer,
         End

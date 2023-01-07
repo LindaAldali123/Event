@@ -1,0 +1,100 @@
+.orgev {
+  margin-top: 142px;
+  margin-bottom: 82px;
+}
+.cono {
+  margin-top: 30px !important;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+.orgev .infuser {
+  padding: 20px;
+}
+.orgev .infuser p {
+  font-size: 15px;
+}
+.orgev .infuser h3 {
+  font-weight: bold;
+  margin-left: 40px;
+}
+.orgev .usrin {
+  background-color: var(--main-color);
+  margin-left: 120px !important;
+  margin-right: 120px !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.orgev .infuser img {
+  width: 160px;
+  height: 146px;
+  margin-left: 20px;
+  text-align: center !important;
+  border-radius: 60%;
+  margin-bottom: 20px;
+}
+.orgev .bac img {
+  margin-top: -70px;
+  height: 312px;
+  width: 100% !important;
+  opacity: 0.7;
+  object-fit: cover !important;
+}
+@media (max-width: 1000px) {
+  .orgev .bac img {
+    display: none;
+  }
+  .orgev .usrin {
+    position: relative;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+  }
+}
+@media (max-width: 1300px) {
+  .orgev .usrin {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+  }
+}
+@media (max-width: 300px) {
+  .orgev .usrin p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .orgev .folw {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
+  }
+  .orgev .infuser img {
+    margin-left: 6px;
+  }
+  .orgev .usrin {
+    position: relative;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+.orgev .folw {
+  padding: 20px !important;
+  margin-top: 70px !important;
+}
+.orgev .folw p {
+  color: gray;
+  font-weight: 600;
+}
+.orgev .bor {
+  border: 1px solid rgb(87, 138, 133);
+  background-color: var(--back-color);
+  color: rgb(53, 221, 204);
+  padding-top: 4px !important;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.orgev .eveu {
+  margin-top: 10px;
+}

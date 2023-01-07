@@ -1,0 +1,71 @@
+.summ {
+	background-image: url('../assets/background.jpg') !important;
+	background-size: cover;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.summa .su {
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 130px;
+	padding-bottom: 100px;
+	top: 0;
+	bottom: 0;
+}
+.summa form {
+	width: 100%;
+	padding: 60px;
+	background-color: var(--white-color);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.summa form p {
+	display: block;
+	font-size: 16px !important;
+	font-weight: 600;
+}
+.summa form h6 {
+	font-weight: 700;
+}
+.summa form h6 select {
+	padding: 7px;
+	border: 1px solid #ccc;
+	float: right;
+}
+.summa form h6 div {
+	float: right;
+	right: 0;
+	text-align: right;
+}
+.summa form h6 div span {
+	font-weight: 500 !important;
+	color: black !important;
+}
+.summa form label {
+	font-size: 15px;
+	font-weight: 500;
+}
+.summa form .Button button {
+	margin-top: 15px;
+	float: right !important;
+	padding: 8px;
+	border-radius: 6px;
+	background-color: rgb(187, 61, 61);
+	font-weight: 700;
+	color: var(--white-color);
+	border: 1px solid rgb(187, 61, 61);
+	width: 30%;
+	text-align: center;
+	margin-bottom: -10px;
+}
+@media (max-width: 767px) {
+	.summa .su {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	.summa form .Button button {
+		width: 45% !important;
+		margin-bottom: 20px !important;
+	}
+}

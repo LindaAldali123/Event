@@ -2,7 +2,7 @@
     <div class="home">
         <app-header />
         <div class="clearfix"></div>
-        <div class="slid">
+        <div class="row slid">
             <Slider />
         </div>
         <div class="clearfix"></div>
@@ -25,6 +25,7 @@ import Event from "@/components/Event.vue";
 import Organizers from "@/components/Organizers.vue";
 import Footer from "@/components/Footer.vue";
 import End from "@/components/End.vue";
+import VueCookies from "vue-cookies";
 export default {
     name: "Home",
     components: {
@@ -36,8 +37,13 @@ export default {
         End
     }
 };
+console.log(VueCookies.get("token"));
 </script>
 <style scoped>
+.slide {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
 .eve {
     margin-top: 550px;
 }

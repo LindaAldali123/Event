@@ -3,7 +3,9 @@
         <div class="con">
             <!--data-aos="zoom-out"-->
             <div class="row">
-                <span class="copyright col-md-4"> &copy; @2021 Events</span>
+                <span class="copyright col-md-4"
+                    ><div class="copy">&copy; @2021 Events</div></span
+                >
                 <ul class="design col-md-8">
                     <li>
                         <a href="#"> About</a>

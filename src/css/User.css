@@ -6,6 +6,7 @@
     height: 100px;
     margin-bottom: 20px;
     margin-left: 20px;
+    object-fit: cover;
 }
 .person p span {
     color: black;
@@ -51,12 +52,23 @@
 }
 /*==============Sidebar==========*/
 .blog .sidebar {
-    width: 85%;
+    width: 98%;
     padding: 18px;
-    margin-right: 80px;
+    margin-right: 60px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .blog .sidebar .recent-posts .post-item {
+        margin-left: -18px !important;
+    }
+    .blog .sidebar .recent-posts h4 {
+        font-size: 12px !important;
+    }
+    .blog .sidebar {
+        width: 100% !important;
+        margin-left: -40px !important;
+    }
+}
 .blog .sidebar .sidebar-title {
     font-size: 20px;
     font-weight: 700;
@@ -126,12 +138,13 @@
 }
 
 .blog .sidebar .recent-posts .post-item + .post-item {
-    margin-top: 15px;
+    margin-top: 8px !important;
 }
 
 .blog .sidebar .recent-posts img {
-    width: 70px;
+    width: 75px;
     height: 60px;
+    margin-left: -2px !important;
     float: left;
 }
 
@@ -142,19 +155,21 @@
 }
 
 .blog .sidebar .recent-posts h4 a {
+    font-size: 13px;
     color: #0d2735;
     transition: 0.3s;
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
     color: #68a4c4;
+    cursor: pointer;
 }
 
 .blog .sidebar .recent-posts time {
     display: block;
     margin-left: 95px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 12px;
     color: #72afce;
 }
 

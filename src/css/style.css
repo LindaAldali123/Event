@@ -1,49 +1,56 @@
 * {
-    direction: ltr;
-    right: 0 !important;
+  direction: ltr;
+  right: 0 !important;
 }
 html,
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 .clearfix {
-    clear: both;
+  clear: both;
 }
 /*======Start Variable =====*/
 :root {
-    --main-color: rgb(241, 239, 239);
-    --back-color: #f6f7fc;
-    --white-color: #fff;
-    --red-color: #e26d5c;
-    --blue-color: rgb(66, 37, 228);
+  --main-color: rgb(241, 239, 239);
+  --back-color: #f6f7fc;
+  --white-color: #fff;
+  --red-color: #e26d5c;
+  --blue-color: rgb(66, 37, 228);
+}
+.middle {
+  text-align: center !important;
+  padding-top: 90px !important;
+  padding-bottom: 80px !important;
 }
 /*Back To Top*/
 .back-to-top {
-    position: fixed;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    right: 17px;
-    bottom: 15px;
-    background: #149ddd;
-    color: var(--white-color);
-    transition: display 0.5s ease-in-out;
-    z-index: 9999;
+  position: fixed;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 17px;
+  bottom: 15px;
+  background: #001c29;
+  color: var(--white-color);
+  transition: display 0.5s ease-in-out;
+  z-index: 9999;
 }
 .back-to-top i {
-    font-size: 26px;
-    position: absolute;
-    font-weight: bold;
-    top: 5px;
-    left: 1px;
-    text-align: center;
+  font-size: 26px;
+  position: absolute;
+  font-weight: bold;
+  top: 5px;
+  left: 1px;
+  text-align: center;
 }
 .back-to-top:hover {
-    color: var(--white-color);
-    background: #012470;
-    transition: background 0.2s ease-in-out;
+  color: var(--white-color);
+  background: #012470;
+  transition: background 0.2s ease-in-out;
 }
